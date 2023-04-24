@@ -64,17 +64,17 @@ main{
     left: 10%;
     
     font-size: 30px;
+    color: #f8f3d4;
     text-align: center;
     padding-top: 1em;
 
     border-width: 2px;
     border: solid;
     border-color: #190130;
-    background-color: #f8f8eab0;
+    background-color: #362f3a94;
     border-radius: 50px;
 
     resize: none;
-
 }
 .inSend{
     position: relative;
@@ -94,6 +94,14 @@ main{
     border-radius: 10px;
     transition: 1s all;
     cursor: pointer;
+}
+.inSend:hover{
+    background-color: #f7f2b0;
+    color: black;
+    transform: scale(1.05);
+}
+#inCrypt:hover{
+    z-index: 3;
 }
 
 .dispCrypt{
@@ -160,6 +168,11 @@ main{
     border-radius: 10px;
     transition: 1s all;
     cursor: pointer;
+}
+.inSelect:hover{
+    background-color: #f7f2b0;
+    color: black;
+    transform: scale(1.05);
 }
 
 footer{
