@@ -143,6 +143,7 @@ main{
     top: 74%;
     left: 7%;
 }
+
 .butCopy{
     display: flex;
     position: relative;
@@ -193,6 +194,385 @@ footer{
     position: relative;
     width: 15%;
     left: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .topBox{
+        width: 100%;
+        height: 15em;
+    }
+    #logo{
+        width: 12%;
+        position: relative;
+        left: 3%;
+        padding-bottom: 2%;
+        margin-top: 10px;
+    
+        border: solid black;
+        background-color: #f8f4b5;
+        border-radius: 100px;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.555);
+    }
+    
+    .titulo{
+        display: flex;
+        position: absolute;
+        left: 20%;
+        top: 4%;
+        width: 70%;
+    }
+    #descTitle{
+        width: 100%;
+        font-size: 40px;
+    }
+    #descText{
+        font-size: 22px;
+        top: 12%;
+    }
+    
+    main{
+        width: 100%;
+        height: 50em;
+        display: flex;
+        margin-bottom: 1%;
+    }
+    
+    main{
+        width: 100%;
+        height: 48em;
+        display: flex;
+        margin-bottom: 1%;
+    }
+    
+    .inMessage{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        right: 14%;
+        width: 90%;
+        height: 35%;
+        z-index: 3;
+    
+    }
+    .inText{
+        box-sizing: border-box;
+        width: 100%;
+        text-overflow: break-word;
+    
+        position: relative;
+        top: 5%;
+        
+        font-size: 30px;
+        color: #f8f3d4;
+        text-align: center;
+        padding-top: 1em;
+    
+        border-width: 2px;
+        border: solid;
+        border-color: #190130;
+        background-color: #362f3a94;
+        border-radius: 50px;
+        box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.555);
+    
+        resize: none;
+    }
+    .inSend{
+        position: absolute;
+        display: flex;
+        top: 93%;
+        left: 35%;
+        height: 12%;
+        justify-content: center;
+        margin: 1px;
+    
+        width: 20%;
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #4c0f68;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #outCrypt{
+        left: 60%;
+    }
+
+    .dispCrypt{
+        display: flex;
+        position: absolute;
+        left: 5%;
+        bottom: 22%;
+        width: 90%;
+        height: 25%;
+
+        text-overflow: break-word;
+        padding: 0 0.5% 0 0.5%;
+        
+        background-color: #362f3a;
+        border: solid;
+        border-color: #160120;
+        border-radius: 50px;
+        box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.555);
+    }
+    #outCrypted{
+        position: absolute;
+        left: 28%;
+        font-size: 35px;
+        color: #ffffffbe;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+    
+        z-index: 3;
+    }
+    #imgTemp{
+        position: absolute;
+        width: 35%;
+        height: 65%;
+        top: 50%;
+        left: 60%;
+
+    }
+    #txtTemp{
+        position: absolute;
+        left: 22%;
+        Top: 40%;
+        font-size: 25px;
+        color: #ffffffbe;
+        position: absolute;
+
+    }
+    
+    .butCopy{
+        display: flex;
+        position: relative;
+        width: 100%;
+        top: 95%;
+        right: 7.5%;
+    }
+    .inSelect{
+        position: absolute;
+        display: flex;
+        left: 46%;
+        width: 20%;
+        height: 82%;
+        justify-content: center;
+        margin: 1px;
+    
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #4c0f68;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    footer{
+        display: flex;
+        background: black;
+    }
+    .details{
+        width: 100%;
+        height: 11em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    body{
+        width: 25em;
+    }
+
+    .topBox{
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1em;
+    }
+    #logo{
+        width: 15%;
+        position: relative;
+        left: 3%;
+        padding-bottom: 4%;
+        margin-top: 10px;
+    
+        border: solid black;
+        background-color: #f8f4b5;
+        border-radius: 100px;
+        box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.555);
+    }
+    
+    .titulo{
+        display: flex;
+        position: absolute;
+        left: 22%;
+        top: 4%;
+        width: 70%;
+    }
+    #descTitle{
+        width: 100%;
+        font-size: 30px;
+    }
+    #descText{
+        font-size: 20px;
+        top: 12%;
+    }
+    
+    main{
+        width: 100%;
+        height: 35em;
+        display: absolute;
+        margin-bottom: 1em;
+    }
+    
+    .inMessage{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        right: 14%;
+        width: 90%;
+        height: 25em;
+        z-index: 3;
+        margin-bottom: 1em;
+    
+    }
+    .inText{
+        box-sizing: border-box;
+        width: 100%;
+        text-overflow: break-word;
+    
+        position: relative;
+        top: 5%;
+        
+        font-size: 30px;
+        color: #f8f3d4;
+        text-align: center;
+        padding-top: 1em;
+    
+        border-width: 2px;
+        border: solid;
+        border-color: #190130;
+        background-color: #362f3a94;
+        border-radius: 50px;
+        box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.555);
+    
+        resize: none;
+        margin-bottom: 1em;
+    }
+    .inSend{
+        position: absolute;
+        display: flex;
+        top: 93%;
+        left: 27%;
+        height: 3em;
+        justify-content: center;
+        margin-bottom: 1em;
+    
+        width: 30%;
+        padding: 10px 0;
+        font-weight: bold;
+        color: white;
+        font-size: 90%;
+    
+        background-color: #4c0f68;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #outCrypt{
+        left: 65%;
+    }
+
+    .dispCrypt{
+        display: flex;
+        position: absolute;
+        left: 5%;
+        top: 65%;
+        width: 87%;
+        height: 20em;
+        
+        text-overflow: break-word;
+        padding: 0 0.5% 0 0.5%;
+        
+        background-color: #362f3a;
+        border: solid;
+        border-color: #160120;
+        border-radius: 50px;
+        box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.555);
+        margin-bottom: 1em;
+    }
+    #outCrypted{
+        position: relative;
+        left: 4%;
+        font-size: 25px;
+        color: #ffffffbe;
+        font-weight: bold;
+        
+    
+        z-index: 3;
+    }
+    #imgTemp{
+        position: absolute;
+        width: 35%;
+        height: 65%;
+        top: 50%;
+        left: 60%;
+
+    }
+    #txtTemp{
+        position: absolute;
+        left: 22%;
+        Top: 40%;
+        font-size: 25px;
+        color: #ffffffbe;
+        position: absolute;
+
+    }
+    
+    .butCopy{
+        display: flex;
+        position: relative;
+        width: 100%;
+        top: 95%;
+        right: 7.5%;
+        margin-bottom: 1em;
+    }
+    .inSelect{
+        position: absolute;
+        display: flex;
+        left: 46%;
+        width: 20%;
+        height: 82%;
+        justify-content: center;
+        margin: 1px;
+    
+        font-size: 90%;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #4c0f68;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    footer{
+        display: flex;
+        background: black;
+        width: 100%;
+        height: 20em;
+    }
+    .details{
+        position: relative;
+        width: 100%;
+        top: 45%;
+    }
+
 }
 
 
