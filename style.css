@@ -1,0 +1,186 @@
+
+.backgroundV1{
+    background: linear-gradient(#f8f3d4, #190130 70%);
+    background-size: cover;
+}
+
+.topBox{
+    width: 100%;
+    height: 15em;
+}
+#logo{
+    width: 6%;
+    position: relative;
+    left: 3%;
+    padding-bottom: 1.5%;
+    margin-top: 10px;
+
+    border: solid black;
+    background-color: #f8f4b5;
+    border-radius: 100px;
+    box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.555);
+}
+
+.titulo{
+    display: flex;
+    position: relative;
+    left: 15%;
+    bottom: 65%;
+    width: 50%;
+}
+#descTitle{
+    width: 100%;
+    font-size: 60px;
+}
+#descText{
+    position: absolute;
+    font-size: 30px;
+    top: 95%;
+}
+
+main{
+    width: 100%;
+    height: 48em;
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.inMessage{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    z-index: 3;
+
+}
+.inText{
+    box-sizing: border-box;
+    width: 80%;
+    height: 85%;
+    text-overflow: break-word;
+
+    position: relative;
+    top: 5%;
+    left: 10%;
+    
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1em;
+
+    border-width: 2px;
+    border: solid;
+    border-color: #190130;
+    background-color: #f8f8eab0;
+    border-radius: 50px;
+
+    resize: none;
+
+}
+.inSend{
+    position: relative;
+    left: 28%;
+    top: 6%;
+    height: 7%;
+    justify-content: center;
+
+    width: 20%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #4c0f68;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.dispCrypt{
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    bottom: 10%;
+    text-overflow: break-word;
+    padding: 0 0.5% 0 0.5%;
+    
+    background-color: #362f3a;
+    border: solid;
+    border-color: #160120;
+    border-radius: 50px;
+    box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.555);
+}
+#outCrypted{
+    font-size: 35px;
+    color: #ffffffbe;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+
+    top: 25%;
+    z-index: 3;
+}
+#imgTemp{
+    width: 60%;
+    position: relative;
+    top: 25%;
+    left: 20%;
+}
+#txtTemp{
+    font-size: 25px;
+    color: #ffffffbe;
+    position: absolute;
+    top: 74%;
+    left: 7%;
+}
+.butCopy{
+    display: flex;
+    position: relative;
+    width: 20%;
+    height: 7%;
+    top: 92.5%;
+    right: 7.5%;
+}
+.inSelect{
+    position: absolute;
+    height: 7%;
+    justify-content: center;
+
+    width: 40%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+    background-color: #4c0f68;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    background: black;
+}
+.details{
+    width: 100%;
+}
+#deets{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    bottom: 40%;
+}
+#inkBit{
+    position: relative;
+    width: 15%;
+    left: 80%;
+}
+
+
+
