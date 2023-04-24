@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <h1> Encryptador V0.0.1 </h1>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Encrypt by InkBit </title>
+        <link rel="stylesheet" href="format.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    
+    <body class="backgroundV1">
+
+        <header>
+            <div class="topBox">
+                <img src="Images/logo.png" id="logo">
+            </div>
+        </header>
+
+        <main> 
+                <section class="inMessage">
+                    <label for="toEncrypt"></label>
+                    <textarea id="toEncrypt" class="inText" placeholder="Ingrese texto a encriptar aquí:"></textarea>
+                    <button value="Encripta" class="inSend" id="inCrypt">Encripta</button>
+                    <button type="submit" value="Desencripta" class="inSend" id="outCrypt">Desencripta</button>
+                </section>
+                <section class="dispCrypt">
+                    <p id="outCrypted"></p>
+                    <img src="Images/search.png" id="imgTemp">
+                    <p id="txtTemp">Escribe tu texto en la caja de la izquierda.</p>
+                    <button type="button" value="copy" class="inSelect" id="inCopy">Copiar</button>
+                </section>
+        </main>
+
+        <footer>
+            <div class="details">
+                <img src="Images/footer.png" id="inkBit">
+                <p id="deets">This project was made by David Adoue</p>
+            </div>            
+        </footer>
+    </body>
+        <script>
+    
+
+var inCrypt = document.getElementById("inCrypt");
+var dispText = document.getElementById("outCrypted");
+var outCrypt = document.getElementById("outCrypt");
+var imgTemp = document.getElementById("imgTemp");
+var txtTemp = document.getElementById("txtTemp");
+var inCopy = document.getElementById("inCopy");
+var frase;
+
+function encryptIt() {
+    let leter, outPhrase;
+    outPhrase = "";
+    frase = document.getElementById("toEncrypt").value;
+    phrase = frase.trim();
+    phrase = phrase.toLowerCase();
+
+    for (let loop = 0; loop < phrase.length; loop++) {
+        leter = phrase.substr(loop, 1);
+
+        if (leter == "a") {leter = "ai"};
+        if (leter == "e") {leter = "enter"};
+        if (leter == "i") {leter = "imes"};
+        if (leter == "o") {leter = "ober"};
+        if (leter == "u") {leter = "ufat"};
+        
+        outPhrase = outPhrase + leter;
+        
+    }
+    frase = outPhrase;
+        if (outPhrase.length > 3) {
+            imgTemp.style.display = "none";
+            txtTemp.style.display = "none";
+            dispText.innerHTML = frase;
+        }
+    
+}
+
+function decryptIt() {
+    let leter, outPhrase;
+    outPhrase = "";
+    frase = document.getElementById("toEncrypt").value;
+    phrase = frase.trim();
+
+    for (let loop = 0; loop < phrase.length; loop++) {
+        leter = phrase.substr(loop, 1);
+
+        if (leter == "a") { leter = phrase.substr(loop, 2);
+                            leter = "a";
+                            loop = loop + 1};
+        if (leter == "e") { leter = phrase.substr(loop, 5);
+                            leter = "e";
+                            loop = loop + 4};
+        if (leter == "i") { leter = phrase.substr(loop, 4);
+                            leter = "i";
+                            loop = loop + 3};
+        if (leter == "o") { leter = phrase.substr(loop, 4);
+                            leter = "o";
+                            loop = loop + 3};
+        if (leter == "u") { leter = phrase.substr(loop, 4);
+                            leter = "u";
+                            loop = loop + 3};
+
+        outPhrase = outPhrase + leter;
+        
+    }
+    frase = outPhrase;
+        if (outPhrase.length > 3) {
+            imgTemp.style.display = "none";
+            txtTemp.style.display = "none";
+            dispText.innerHTML = frase;
+        }
+    
+}
+
+function copyPaste() {
+    var toCopy = document.getElementById("outCrypted");
+
+        navigator.clipboard.writeText(frase);
+
+}
+
+    dispText.innerHTML = "No se encontro texto";
+
+    inCrypt.onclick = encryptIt;
+    outCrypt.onclick = decryptIt;
+    inCopy.onclick = copyPaste;
+    
+        </script>
+    
+</html>
